@@ -832,7 +832,7 @@ open class LottieAnimationView: LottieAnimationViewBase {
         position.y = bounds.maxY - animation.bounds.midY
         xform = CATransform3DIdentity
 
-      #if os(iOS) || os(tvOS)
+      #if os(iOS) || os(tvOS) || os(xrOS)
       @unknown default:
         logger.assertionFailure("unsupported contentMode: \(contentMode.rawValue)")
         xform = CATransform3DIdentity

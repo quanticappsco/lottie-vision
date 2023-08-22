@@ -6,7 +6,7 @@
 //
 
 import Foundation
-#if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst)
+#if os(iOS) || os(tvOS) || os(watchOS) || targetEnvironment(macCatalyst) || os(xrOS)
 import UIKit
 
 /// Lottie comes prepacked with a two Animated Controls, `AnimatedSwitch` and
